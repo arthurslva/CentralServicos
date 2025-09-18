@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; 
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo {
+  color: blue;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  width: 350px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-top: 10px;
+  color: blue;
+}
+
+input, button {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  color: blue;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cadastro-link {
+  margin-top: 15px;
+  color: blue;
+  font-size: 14px;
+}
+
+.cadastro-link a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cadastro-link a:hover {
+  text-decoration: underline;
+}
