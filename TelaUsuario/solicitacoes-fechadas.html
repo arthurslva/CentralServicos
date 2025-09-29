@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitações Fechadas | ServiceControl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo-cabecalho">
+           <img src="../Logos/LogoIFPB.png" alt="Logo da Empresa">
+            <a href="index.html"><h1>ServiceControl</h1></a>
+        </div>
+        <div class="perfil-usuario">
+            <img src="perfil-usuario.png" alt="Foto de Perfil">
+            <span id="nomeUsuario">Usuário Comum</span>
+            <div class="menu-dropdown">
+                 <a href="../TelaLogin/LoginTela.html" id="botaoSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="barra-lateral">
+            <nav>
+                <ul>
+                    <li><a href="nova-solicitacao.html" class="botao-navegacao">Nova Solicitação</a></li>
+                    <li><a href="solicitacoes-abertas.html" class="botao-navegacao">Abertas</a></li>
+                    <li><a href="solicitacoes-fechadas.html" class="botao-navegacao">Fechadas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="conteudoPrincipal">
+            <div class="conteudo-card">
+                <h2>Minhas Solicitações Fechadas</h2>
+
+                <table class="tabela-solicitacoes">
+                    <thead>
+                        <tr>
+                            <th>Nº Ocorrência</th>
+                            <th>Título</th>
+                            <th>Urgência</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>124</td>
+                            <td>Computador não liga</td>
+                            <td>Média</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="solicitacoes-fechadas.js"></script>
+</body>
+
+</html>

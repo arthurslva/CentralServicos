@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Solicitação | ServiceControl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nova-solicitacao.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo-cabecalho">
+            <img src="../Logos/LogoIFPB.png" alt="Logo da Empresa">
+           <a href="index.html"><h1>ServiceControl</h1></a>
+        </div>
+        <div class="perfil-usuario">
+            <img src="perfil-usuario.png" alt="Foto de Perfil">
+            <span id="nomeUsuario">Usuário Comum</span>
+            <div class="menu-dropdown">
+                <a href="#" id="botaoSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="barra-lateral">
+            <nav>
+                <ul>
+                    <li><a href="nova-solicitacao.html" class="botao-navegacao">Nova Solicitação</a></li>
+                    <li><a href="solicitacoes-abertas.html" class="botao-navegacao">Abertas</a></li>
+                    <li><a href="solicitacoes-fechadas.html" class="botao-navegacao">Fechadas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="conteudoPrincipal">
+            <div class="conteudo-card">
+                <h2>Nova Solicitação de Serviço</h2>
+                <form id="novaSolicitacaoForm">
+                    <div class="grupo-campo">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="descricao">Descrição do Problema:</label>
+                        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+                    </div>
+
+                    <div class="opcoes-formulario">
+                        <div class="opcao">
+                            <label for="prioridade">Prioridade</label>
+                            <select id="prioridade" name="prioridade">
+                                <option value="baixa">Baixa</option>
+                                <option value="media">Média</option>
+                                <option value="alta">Alta</option>
+                            </select>
+                        </div>
+                        <div class="opcao">
+                            <label for="setor">Setor</label>
+                            <input type="text" id="setor" name="setor">
+                        </div>
+                        <div class="opcao">
+                            <label for="imagem">Imagem</label>
+                            <input type="file" id="imagem" name="imagem" accept="image/*">
+                        </div>
+                        <div class="opcao">
+                            <label for="equipamento">Equipamento</label>
+                            <input type="text" id="equipamento" name="equipamento">
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar Solicitação</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="nova-solicitacao.js"></script>
+    <script src="index.html"></script>
+
+</body>
+
+</html>

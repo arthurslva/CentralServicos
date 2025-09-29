@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - ServiceControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="titulo">ServiceControl</h1>
+
+  <div class="container">
+    <form id="cadastroForm" action="sucesso.html" method="post">
+      <h2 style="color: blue; text-align: center; margin-bottom: 15px;">Cadastro de Usuário</h2>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p class="cadastro-link">
+      Já tem cadastro? <a href="LoginTela.html">Voltar ao Login</a>
+    </p>
+  </div>
+
+</body>
+</html>
