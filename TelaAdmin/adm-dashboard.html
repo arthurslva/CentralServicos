@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel ADM</title>
+    <link rel="stylesheet" href="../CentralServicos/TelaUsuario/style.css">
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo-cabecalho">
+            <img src="logo.png" alt="Logo da Empresa">
+            <h1>CENTRAL DE SERVIÇOS</h1>
+        </div>
+        <div class="perfil-usuario">
+            <img src="perfil-usuario.png" alt="Foto de Perfil">
+            <span id="nomeUsuario">Administrador</span>
+            <div class="menu-dropdown">
+                <a href="#" id="botaoSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="barra-lateral">
+            <nav>
+                <ul>
+                    <li><a href="adm-dashboard.html" class="botao-navegacao">Dashboard</a></li>
+                    <li><a href="adm-gerenciar.html" class="botao-navegacao">Gerenciar Solicitações</a></li>
+                    <li><a href="adm-nova-os.html" class="botao-navegacao">Criar Ordem de Serviço</a></li>
+                    <li><a href="adm-relatorios.html" class="botao-navegacao">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="conteudoPrincipal">
+            <div class="conteudo-card">
+                <h2>Dashboard</h2>
+                
+                <div class="painel-dashboard">
+                    <div class="card-estatistica">
+                        <p>Serviços em Aberto</p>
+                        <p class="numero">5</p>
+                    </div>
+                    <div class="card-estatistica">
+                        <p>Serviços Concluídos</p>
+                        <p class="numero">15</p>
+                    </div>
+                    <div class="card-estatistica">
+                        <p>Total de Usuários</p>
+                        <p class="numero">20</p>
+                    </div>
+                </div>
+                
+                <p>O conteúdo aqui será preenchido pelo seu back-end com dados reais, como gráficos ou tabelas de resumo.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="adm.js"></script>
+</body>
+</html>

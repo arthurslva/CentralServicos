@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar OS | ServiceControl</title>
+    <link rel="stylesheet" href="/CentralServicos/TelaUsuario/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo-cabecalho">
+            <img src="logo.png" alt="Logo da Empresa">
+            <h1>CENTRAL DE SERVIÇOS</h1>
+        </div>
+        <div class="perfil-usuario">
+            <img src="perfil-usuario.png" alt="Foto de Perfil">
+            <span id="nomeUsuario">Administrador</span>
+            <div class="menu-dropdown">
+                <a href="#" id="botaoSair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="barra-lateral">
+            <nav>
+                <ul>
+                    <li><a href="adm-dashboard.html" class="botao-navegacao">Dashboard</a></li>
+                    <li><a href="adm-gerenciar.html" class="botao-navegacao">Gerenciar Solicitações</a></li>
+                    <li><a href="adm-nova-os.html" class="botao-navegacao">Criar Ordem de Serviço</a></li>
+                    <li><a href="adm-relatorios.html" class="botao-navegacao">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="conteudoPrincipal">
+            <div class="conteudo-card">
+                <h2>Criar Nova Ordem de Serviço</h2>
+                <form id="novaOSForm">
+                    <div class="grupo-campo">
+                        <label for="solicitante">Solicitante:</label>
+                        <input type="text" id="solicitante" name="solicitante" placeholder="Nome do Usuário ou Setor"
+                            required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="descricao">Descrição Detalhada:</label>
+                        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+                    </div>
+
+                    <div class="opcoes-formulario">
+                        <div class="opcao">
+                            <label for="prioridade">Prioridade</label>
+                            <select id="prioridade" name="prioridade">
+                                <option value="baixa">Baixa</option>
+                                <option value="media">Média</option>
+                                <option value="alta">Alta</option>
+                            </select>
+                        </div>
+                        <div class="opcao">
+                            <label for="setor">Setor</label>
+                            <input type="text" id="setor" name="setor">
+                        </div>
+                        <div class="opcao">
+                            <label for="equipamento">Equipamento</label>
+                            <input type="text" id="equipamento" name="equipamento">
+                        </div>
+                    </div>
+
+                    <button type="submit">Finalizar Criação da OS</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="adm-nova-os.js"></script>
+</body>
+
+</html>
